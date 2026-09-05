@@ -1,0 +1,92 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "智慧农业"
+			}
+		},
+		{
+			"path" : "pages/page2/page2",
+			"style" : 
+			{
+				"navigationBarTitleText" : "开发团队介绍"
+				
+			}
+		},
+		{
+			"path" : "pages/Visual_Data/Visual_Data",
+			"style" : 
+			{
+				"navigationBarTitleText" : "用户",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/data_pages/data_pages",
+			"style" : 
+			{
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path" : "pages/environment/environment",
+			"style" : 
+			{
+				"navigationBarTitleText" : "异常信息"
+			}
+		},
+		{
+			"path" : "warning_pages/warning_pages",
+			"style" : 
+			{
+				"navigationBarTitleText" : "详情页面"
+			}
+		},
+		{
+			"path" : "pages/User_doc/User_doc",
+			"style" : 
+			{
+				"navigationBarTitleText" : "使用文档"
+			}
+		},
+		{
+			"path" : "pages/help_doc/help_doc",
+			"style" : 
+			{
+				"navigationBarTitleText" : "常见问题"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		//"transparentTitle":"auto"
+		"enablePullDownRefresh": true
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#015FF9",
+		"custom": true,
+		"list": [
+			{
+				"text":"首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/home.png",
+				"selectedIconPath": "static/images/home-h.png"
+			},
+			{
+				"text":"用户",
+				"pagePath": "pages/Visual_Data/Visual_Data",
+				"iconPath": "static/images/user-50.png",
+				"selectedIconPath": "static/images/user-50-h.png"
+				
+			}
+		]
+		
+	}
+}

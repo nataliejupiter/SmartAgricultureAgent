@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: LILI zhengbo, JXUST, LIC=JL28G-V2SKJ-2ZRW4-FF4NS-VBYK5-MQETM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\BaiduNetdiskDownload\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\About_Competitions_and_Projects\innova_agri_agent\code\stm32\stm32_review_0618¸Ä\stm32_review\stm32¡ª¡ª³ÂÓû»Í\USER\ADC.uvprojx
+Project File Date:  06/21/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\BaiduNetdiskDownload\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'ADC'
+compiling system_stm32f4xx.c...
+compiling DHT11.c...
+..\HARDWARE\dht11\DHT11.c(142): warning:  #1-D: last line of file ends without a newline
+   
+..\HARDWARE\dht11\DHT11.c: 1 warning, 0 errors
+compiling HDC1080.c...
+compiling main.c...
+image.h(11894): warning:  #1-D: last line of file ends without a newline
+   #endif
+..\HARDWARE\JW01\JW01.h(8): warning:  #1295-D: Deprecated declaration USART1_IRQHandler - give arg types
+  void USART1_IRQHandler();
+..\HARDWARE\JW01\JW01.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\YL-69\YL-69.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef __YL-69_H
+..\HARDWARE\YL-69\YL-69.h(2): warning:  #2775-D: white space is required between the macro name "__YL" and its replacement text
+  #define __YL-69_H
+main.c(321): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 6 warnings, 0 errors
+compiling stm32f4xx_it.c...
+compiling TS.c...
+..\HARDWARE\TS\TS.c(47): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	return 100 - (float)temp_val/40.96;
+..\HARDWARE\TS\TS.c: 1 warning, 0 errors
+compiling myiic.c...
+compiling lcd.c...
+compiling beep.c...
+compiling adc.c...
+compiling led.c...
+assembling startup_stm32f40_41xxx.s...
+compiling JW01.c...
+compiling delay.c...
+compiling YL-69 .c...
+..\HARDWARE\YL-69\YL-69.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef __YL-69_H
+..\HARDWARE\YL-69\YL-69.h(2): warning:  #2775-D: white space is required between the macro name "__YL" and its replacement text
+  #define __YL-69_H
+..\HARDWARE\YL-69\YL-69 .c: 2 warnings, 0 errors
+compiling sys.c...
+compiling usart.c...
+..\SYSTEM\usart\usart.c(59): warning:  #223-D: function "Read_Temp_Humi_Reg" declared implicitly
+  		Read_Temp_Humi_Reg(data);
+..\SYSTEM\usart\usart.c(60): warning:  #223-D: function "Get_Adc_Average" declared implicitly
+  		Get_Adc_Average(ADC_Channel_3,20);
+..\SYSTEM\usart\usart.c(61): warning:  #223-D: function "TS_GetData1" declared implicitly
+  		TS_GetData1(5, 20);
+..\SYSTEM\usart\usart.c(195): warning:  #223-D: function "delay_ms" declared implicitly
+          delay_ms(1);
+..\SYSTEM\usart\usart.c: 4 warnings, 0 errors
+compiling misc.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_syscfg.c...
+linking...
+Program Size: Code=36652 RO-data=6504 RW-data=52 ZI-data=1244  
+FromELF: creating hex file...
+"..\OBJ\ADC.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.1.0.8.pack
+                Keil.STM32F4xx_DFP.1.0.8
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/BaiduNetdiskDownload/Keil_v5/ARM/PACK/Keil/STM32F4xx_DFP/1.0.8/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>

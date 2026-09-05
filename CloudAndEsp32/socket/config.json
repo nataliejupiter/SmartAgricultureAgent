@@ -1,0 +1,1 @@
+{"Host": "8.152.218.172", "SocketPort": 25565, "WebSocketPort": 25564, "LastID": 1, "LastDeleteDataTime": 1741422146.3006365, "DeleteDataInterval": 86400, "DeleteTableList": ["SensorData", "BinFile"], "MaxStorageTime": 2592000, "MaxHeartInterval": 30, "HeartScanInterval": 30}

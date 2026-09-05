@@ -1,0 +1,17 @@
+{
+    "id": "hyoga-uni-socket_io",
+    "name": "socket.io ui-app版",
+    "displayName": "socket.io ui-app版",
+    "version": "3.0.4",
+    "description": "适用于uni-app的socket.io封装，可用于uni-app、微信小程序",
+    "keywords": [
+        "socket.io",
+        "微信小程序"
+    ],
+    "dcloudext": {
+        "category": [
+            "JS SDK",
+            "通用 SDK"
+        ]
+    }
+}

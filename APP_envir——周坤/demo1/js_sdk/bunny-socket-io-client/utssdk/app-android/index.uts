@@ -1,0 +1,85 @@
+import URI from "java.net.URI";
+import Socket from "io.socket.client.Socket";
+import IO from "io.socket.client.IO";
+
+
+
+type CallBack = (option : object | null) => void
+
+
+export type OPTIONS = {
+	path ?: string
+	query ?: string
+	forceNew ?: boolean
+	multiplex ?: boolean
+	extraHeaders ?: Map<string, Array<string>> | null
+
+	// auth ?: Map<string, string> | null
+	//         public boolean reconnection = true;
+	//         public int reconnectionAttempts;
+	//         public long reconnectionDelay;
+	//         public long reconnectionDelayMax;
+	//         public double randomizationFactor;
+	//         public Parser.Encoder encoder;
+	//         public Parser.Decoder decoder;
+	//         public Map<String, String> auth;
+
+	//         /**
+	//          * Connection timeout (ms). Set -1 to disable.
+	//          */
+	//         public long timeout = 20000;
+}
+
+/**
+ * 监听的回调
+ */
+class Listener extends io.socket.emitter.Emitter.Listener {
+	private event : CallBack
+	constructor(event : CallBack) {
+		super()
+		this.event = event
+	}
+	override call(...args : Array<object | null>) : void {
+		this.event(args[0])
+	}
+}
+
+/**
+ * socket.io 实例
+ * 创建会生成全新的连接，根据业务需求考虑是否需要单例函数
+ */
+export class SOCKET_IO_CLIENT {
+	private socket : Socket
+	constructor(url : string, opt : OPTIONS) {
+		let options : IO.Options = new IO.Options()
+		// path
+		if (opt.path != null) {
+			options.path = opt.path
+		}
+		// 请求参数
+		if (opt.query != null) {
+			options.query = opt.query
+		}
+		// 请求头
+		if (opt.extraHeaders != null) {
+			const map : Map<string, List<string>> = new Map<string, List<string>>()
+			opt.extraHeaders!.forEach((value : Array<string>, key : string) => {
+				map.set(key, value)
+			})
+			options.extraHeaders = map
+		}
+		this.socket = IO.socket(URI.create(url), options);
+	}
+	on(event : string, fn : CallBack) {
+		this.socket.on(event, new Listener(fn))
+	}
+	close() {
+		this.socket.close()
+	}
+	connect() {
+		this.socket.connect()
+	}
+	emit(event : string, data : any) {
+		this.socket.emit(event, data)
+	}
+}

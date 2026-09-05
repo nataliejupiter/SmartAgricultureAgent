@@ -1,0 +1,5 @@
+训练的命令:
+python3 train.py --weights yolov5s.pt --data data/ChineseChess/ChineseChess.yaml --workers 4 --batch-size 20 --epochs 100
+
+识别的命令：
+python3 detect.py --weight last.pt --source data/ChineseChess/images/test

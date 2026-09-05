@@ -1,0 +1,21 @@
+{
+    "name": "WINext-TCP-Socket",
+    "id": "winext-tcp-client",
+    "version": "1.0.1",
+    "description": "TCP-Socket 安卓原生连接",
+    "_dp_type": "nativeplugin",
+    "_dp_nativeplugin": {
+        "android": {
+            "hooksClass": "com.winext.tcpsocket.TCPServerModule",
+            "integrateType": "aar",
+            "minSdkVersion": "21",
+            "plugins": [
+                {
+                    "type": "module",
+                    "name": "winext-tcp-client",
+                    "class": "com.winext.tcpsocket.TCPServerModule"
+                }
+            ]
+        }
+    }
+}

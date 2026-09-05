@@ -1,0 +1,20 @@
+[13:36:42] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[13:37:22] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[13:38:01] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:09:38] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:10:46] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:14:51] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:15:55] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:16:52] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:19:08] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:19:50] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:21:39] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:22:27] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:23:00] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:24:17] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:25:24] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:26:06] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:27:46] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:28:46] 服务器已开启,IP:10.21.87.116,SocketPort:25565,WebsocketPort:25564
+[16:28:50] ID:11(IP:('127.0.0.1', 2531))上线
+[16:29:16] ID:11(IP:('127.0.0.1', 2531))已离线

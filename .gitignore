@@ -1,0 +1,19 @@
+# AI Models
+RAG/model/
+
+# Large model files
+*.gguf
+*.bin
+*.safetensors
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
